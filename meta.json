@@ -4,23 +4,18 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "fileId",
+            "title":"File ID"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "success",
+            "title": "Success"
         }
-      */
     ],
+    "icon": "dex-drive",
     "title": "Google Drive Delete File" /* Required.A display name for the module */
 }
