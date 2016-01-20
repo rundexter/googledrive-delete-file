@@ -2,20 +2,26 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
         {
             "id": "fileId",
             "title":"File ID"
         }
     ],
-    //Required. Outputs the module emits.
     "outputs": [
         {
             "id": "success",
             "title": "Success"
         }
     ],
+    "providers": [{
+        "name": "google",
+        "scopes": [
+            "https://www.googleapis.com/auth/drive",
+            "https://www.googleapis.com/auth/drive.appdata",
+            "https://www.googleapis.com/auth/drive.file"
+        ]
+    }],
     "icon": "dex-drive",
-    "title": "Google Drive Delete File" /* Required.A display name for the module */
+    "title": "Google Drive Delete File"
 }
